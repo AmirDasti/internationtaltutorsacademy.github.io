@@ -796,7 +796,31 @@ ul.course-meta-stats li i {
 .teacher-carousel .owl-nav div:hover {
   background: #fc9928;
 }
+.teacher-area .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+/* Image same size */
+.teacher-area .card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+/* Content equal spacing */
+.teacher-area .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Text same height control */
+.teacher-area .card-text {
+    flex-grow: 1;
+    overflow: hidden;
+}
 /*============================================
     END Course Area
 *=============================================*/
