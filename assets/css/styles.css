@@ -260,33 +260,76 @@ a:hover {
   display: inline-block;
 }
 
-.main-menu nav ul li {
-  display: inline-block;
-  position: relative;
-}
+/* ===== Main Menu Styling ===== */
 
 .main-menu {
   text-align: right;
+}
+
+.main-menu nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu nav ul li {
+  display: inline-block;
+  position: relative;
 }
 
 .main-menu nav ul li a {
   display: block;
   font-size: 13px;
   font-weight: 700;
-  color: #007bff;
+  color: #fc9928; /* ORANGE COLOR */
   text-transform: uppercase;
   padding: 43px 17px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
+/* Sticky Header Padding */
 .sticky-header .main-menu nav > ul > li > a {
   padding: 38px 17px;
 }
 
+/* Hover & Active Effect */
 .main-menu nav ul li > a:hover,
 .main-menu nav ul li.active > a {
-  color: #fc9928;
+  color: #e6891f; /* DARK ORANGE */
 }
 
+/* ===== Submenu Styling ===== */
+
+.main-menu nav ul li .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  background: #fff;
+  display: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.main-menu nav ul li:hover .submenu {
+  display: block;
+}
+
+.main-menu nav ul li .submenu li {
+  display: block;
+}
+
+.main-menu nav ul li .submenu li a {
+  padding: 10px 15px;
+  color: #fc9928; /* submenu bhi orange */
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.main-menu nav ul li .submenu li a:hover {
+  background: #f9f9f9;
+  color: #e6891f;
+}
 /*submenu*/
 
 .main-menu nav .submenu {
