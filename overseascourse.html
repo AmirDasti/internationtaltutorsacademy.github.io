@@ -201,6 +201,150 @@
         </div>
     </div> -->
     <!-- hero area end
+
+  
+<!-- COUNTRY BUTTONS -->
+<div class="container my-4 text-center">
+
+    <button class="btn btn-primary m-1" onclick="showCountry('uk')">UK</button>
+    <button class="btn btn-primary m-1" onclick="showCountry('usa')">USA</button>
+    <button class="btn btn-primary m-1" onclick="showCountry('australia')">Australia</button>
+    <button class="btn btn-primary m-1" onclick="showCountry('uae')">UAE</button>
+    <button class="btn btn-primary m-1" onclick="showCountry('saudi')">Saudi Arabia</button>
+    <button class="btn btn-primary m-1" onclick="showCountry('europe')">Europe</button>
+
+</div>
+
+<!-- SUBJECT MENU -->
+<div class="container">
+
+    <!-- UK -->
+    <div id="uk" class="country-box">
+        <h3>UK Subjects</h3>
+        <ul>
+            <li>English Language</li>
+            <li>Mathematics</li>
+            <li>Science (Physics, Chemistry, Biology)</li>
+            <li>Computer Science</li>
+            <li>Business Studies</li>
+        </ul>
+    </div>
+
+    <!-- USA -->
+    <div id="usa" class="country-box" style="display:none;">
+        <h3>USA Subjects</h3>
+        <ul>
+            <li>English Language Arts</li>
+            <li>Mathematics</li>
+            <li>Science</li>
+            <li>Social Studies</li>
+            <li>Coding / Computer Science</li>
+        </ul>
+    </div>
+
+    <!-- AUSTRALIA -->
+    <div id="australia" class="country-box" style="display:none;">
+        <h3>Australia Subjects</h3>
+        <ul>
+            <li>English</li>
+            <li>Mathematics</li>
+            <li>Science</li>
+            <li>Digital Technologies</li>
+            <li>Business Studies</li>
+        </ul>
+    </div>
+
+    <!-- UAE -->
+    <div id="uae" class="country-box" style="display:none;">
+        <h3>UAE Subjects</h3>
+        <ul>
+            <li>English</li>
+            <li>Mathematics</li>
+            <li>Science</li>
+            <li>Arabic</li>
+            <li>Computer Studies</li>
+        </ul>
+    </div>
+
+    <!-- SAUDI -->
+    <div id="saudi" class="country-box" style="display:none;">
+        <h3>Saudi Arabia Subjects</h3>
+        <ul>
+            <li>Arabic Language</li>
+            <li>Islamic Studies</li>
+            <li>Mathematics</li>
+            <li>Science</li>
+            <li>English</li>
+        </ul>
+    </div>
+
+    <!-- EUROPE -->
+    <div id="europe" class="country-box" style="display:none;">
+        <h3>Europe Subjects</h3>
+        <ul>
+            <li>Mathematics</li>
+            <li>Science</li>
+            <li>English (Foreign Language)</li>
+            <li>History</li>
+            <li>ICT / Computer Science</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- CSS -->
+<style>
+.country-box{
+    background:#f8f9fa;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+.country-box h3{
+    margin-bottom:15px;
+    color:#007bff;
+}
+.country-box ul{
+    list-style:none;
+    padding:0;
+}
+.country-box ul li{
+    padding:5px 0;
+    border-bottom:1px solid #ddd;
+}
+</style>
+
+<!-- JAVASCRIPT -->
+<script>
+function showCountry(country) {
+
+    let boxes = document.querySelectorAll('.country-box');
+
+    boxes.forEach(box => {
+        box.style.display = "none";
+    });
+
+    document.getElementById(country).style.display = "block";
+}
+</script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
   <!-- course area start -->
   
 <div class="course-area  ptb--120">
@@ -214,67 +358,7 @@
                 </div>
             </div>
  
-          <div class="header-bottom">
-            <div class="container">
-                <div class="header-bottom-inner">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 col-sm-9">
-                            <div class="logo">
-                                <a href="index.html"><img src="assets/images/icon/logo.png" alt="logo"></a>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-lg-7 d-none d-lg-block">
-                            <div class="main-menu">
-                                <nav>
-                                    <ul id="m_menu_active">
-                                        <li><a href="javascript:void(0);">Home</a>
-                                            <ul class="submenu">
-                                                <li><a href="index.html">Home One</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="active"><a href="about.html">About</a></li>
-                                        <li><a href="javascript:void(0);">Courses</a>
-                                            <ul class="submenu">
-                                                <li><a href="courses.html">courses</a></li>
-                                               <li><a href="Sujects.html">Subjects</a></li>
-                                               <li><a href="Assignments.html">Assignments</a></li>
-                                               <li><a href="Projects.html">Projects</a></li>
-                                            
-                                            </ul>
-                                        </li>
-                                        <li><a href="javascript:void(0);">teacher</a>
-                                            <ul class="submenu">
-                                                <li><a href="teachers.html">teachers</a></li>
-                                                <li><a href="teacher-details.html">teacher details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="javascript:void(0);">Country</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Overseas Student</a></li>
-                                                <li><a href="blog-details.html">Pakistani Student</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-xl-1 col-lg-2 col-sm-3">
-                            <div class="hb-right">
-                                <ul> 
-                                    <li class="search_btn"><i class="fa fa-search"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-12 d-block d-lg-none">
-                            <div id="mobile_menu"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+    
           
 <div class="container">
     <div class="row">
