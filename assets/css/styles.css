@@ -726,7 +726,15 @@ a.expand-video:hover {
   transition: all 0.3s ease 0s;
 }
 .course-thumb {
-  position: relative;
+    height: 200px;        /* fixed height */
+    overflow: hidden;     /* extra image cut */
+    position: relative;
+}
+
+.course-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* important: image crop but same size */
 }
 .cs-price {
   position: absolute;
