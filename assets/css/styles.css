@@ -945,9 +945,7 @@ img.title-top-shape {
   position: relative;
   z-index: 1;
 }
-.teacher-area .card-title.mb-4 {
-  margin-bottom: 0 !important;
-}
+
 .teacher-area:before {
   content: "";
   position: absolute;
@@ -958,23 +956,22 @@ img.title-top-shape {
   width: 100%;
   background: #14171d;
 }
-.teacher-content ul li a {
-  font-size: 16px;
+
+.teacher-area .card-title.mb-4 {
+  margin-bottom: 0 !important;
 }
 
-.teacher-contenttchd-content ul li a {
+.teacher-content ul li a {
+  font-size: 16px;
   margin-right: 10px;
 }
-.teacher-content img {
-    width: 100%;
-    height: 250px;      /* same height for all images */
-    object-fit: cover;  /* image crop hogi but fit rahegi */
-    border-radius: 5px; /* optional styling */
-} 
-.card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+
+/* ✅ FIXED IMAGE SIZE (use only ONE rule) */
+.teacher-area .card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
 }
 /*============================================
     END Teacher Area
