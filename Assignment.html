@@ -206,45 +206,94 @@
   
 <style>
 body{
-    background:#f5f7fb;
+    background: linear-gradient(to right, #eef2f7, #f8fbff);
+    font-family: 'Segoe UI', sans-serif;
 }
 
 /* HEADER */
 .header{
-    background:#007bff;
+    background: linear-gradient(135deg, #0056b3, #007bff);
     color:#fff;
-    padding:40px 0;
+    padding:60px 20px;
     text-align:center;
+    border-bottom-left-radius:40px;
+    border-bottom-right-radius:40px;
 }
 .header h1{
+    font-weight:800;
+    font-size:40px;
+}
+.header p{
+    opacity:0.9;
+    font-size:18px;
+}
+
+/* SECTION TITLE */
+h3{
     font-weight:700;
+    color:#333;
 }
 
 /* CARD */
 .assignment-card{
     border:none;
-    border-radius:12px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.1);
-    transition:0.3s;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+    background:#fff;
 }
 .assignment-card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-10px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
 }
 
 /* ICON */
 .icon{
-    font-size:40px;
+    font-size:45px;
     color:#007bff;
+}
+
+/* SERVICES CARD */
+.assignment-card h5{
+    font-weight:700;
+    margin-bottom:10px;
+}
+.assignment-card p{
+    color:#666;
+}
+
+/* COUNTRIES */
+.container.text-center p{
+    font-size:18px;
+    font-weight:500;
+    color:#555;
 }
 
 /* BUTTON */
 .btn-order{
-    background:#28a745;
+    background: linear-gradient(135deg, #28a745, #20c997);
     color:#fff;
     font-weight:600;
+    padding:12px 30px;
+    border-radius:30px;
+    border:none;
+    transition:0.3s;
 }
 .btn-order:hover{
-    background:#218838;
+    background: linear-gradient(135deg, #218838, #17a2b8);
+    transform:scale(1.05);
+}
+
+/* WHATSAPP ICON SPACE */
+.btn-order i{
+    margin-right:8px;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+    .header h1{
+        font-size:28px;
+    }
 }
 </style>
 </head>
