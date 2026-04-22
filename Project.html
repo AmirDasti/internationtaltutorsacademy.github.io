@@ -203,81 +203,80 @@
   
 
   
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 body{
-    margin:0;
-    padding:0;
-    background: linear-gradient(to right, #eef2f7, #f8fbff);
-    font-family: 'Poppins', sans-serif;
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(to right,#eef2f7,#f8fbff);
 }
 
 /* HEADER */
 .header{
-    background: linear-gradient(135deg, #0056b3, #007bff);
+    background:linear-gradient(135deg,#0d6efd,#003f88);
     color:#fff;
-    padding:60px 20px;
     text-align:center;
-    border-bottom-left-radius:40px;
-    border-bottom-right-radius:40px;
+    padding:60px 20px;
+    border-radius:0 0 40px 40px;
 }
 .header h1{
+    font-size:42px;
     font-weight:800;
-    font-size:40px;
-}
-.header p{
-    opacity:0.9;
-    font-size:18px;
 }
 
-/* TITLES */
-h3{
+/* SECTION TITLE */
+.section-title{
+    text-align:center;
+    margin:50px 0 30px;
     font-weight:700;
-    color:#333;
 }
 
 /* CARD */
-.assignment-card{
-    border:none;
+.card-box{
+    background:#fff;
     border-radius:15px;
+    padding:25px;
     box-shadow:0 8px 25px rgba(0,0,0,0.08);
     transition:0.4s;
-    background:#fff;
+    height:100%;
 }
-.assignment-card:hover{
+.card-box:hover{
     transform:translateY(-10px);
-    box-shadow:0 12px 30px rgba(0,0,0,0.15);
 }
 
 /* ICON */
 .icon{
-    font-size:45px;
-    color:#007bff;
+    font-size:40px;
+    color:#0d6efd;
+    margin-bottom:15px;
 }
 
-/* TEXT */
-.assignment-card p{
-    color:#666;
+/* PRICING */
+.price{
+    font-size:28px;
+    font-weight:700;
+    color:#28a745;
 }
 
 /* BUTTON */
-.btn-order{
-    background: linear-gradient(135deg, #28a745, #20c997);
+.btn-whatsapp{
+    background:linear-gradient(135deg,#25D366,#128C7E);
     color:#fff;
-    font-weight:600;
-    padding:12px 30px;
-    border-radius:30px;
     border:none;
-    transition:0.3s;
+    border-radius:30px;
+    padding:10px 25px;
+    font-weight:600;
 }
-.btn-order:hover{
-    background: linear-gradient(135deg, #218838, #17a2b8);
+.btn-whatsapp:hover{
     transform:scale(1.05);
 }
-.btn-order i{
-    margin-right:8px;
+
+/* LIST */
+ul{
+    padding-left:18px;
+}
+ul li{
+    margin-bottom:5px;
 }
 
 /* MOBILE */
@@ -294,90 +293,113 @@ h3{
 
 <!-- HEADER -->
 <div class="header">
-    <h1>Assignment Writing Services</h1>
-    <p>Get High Quality Work & Score Top Grades</p>
+    <h1>Academic Project Services</h1>
+    <p>Complete Projects with Code, Report & Presentation</p>
 </div>
 
 <!-- INTRO -->
 <div class="container text-center mt-5">
-    <h3>Struggling with Assignments?</h3>
-    <p>We provide professional assignment writing services for UK, USA, Australia, UAE, Qatar & Europe students.</p>
+    <h3>Get Your Projects Done by Experts</h3>
+    <p>We develop professional academic projects for UK, USA, Australia, UAE & Europe students.</p>
 </div>
 
-<!-- FEATURES -->
-<div class="container mt-5">
-    <div class="row text-center">
-
-        <div class="col-md-4 mb-4">
-            <div class="card assignment-card p-4">
-                <div class="icon mb-3"><i class="fa fa-check-circle"></i></div>
-                <h5>100% Plagiarism Free</h5>
-                <p>Original and unique content guaranteed</p>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="card assignment-card p-4">
-                <div class="icon mb-3"><i class="fa fa-clock-o"></i></div>
-                <h5>On Time Delivery</h5>
-                <p>Meet your deadlines without stress</p>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="card assignment-card p-4">
-                <div class="icon mb-3"><i class="fa fa-graduation-cap"></i></div>
-                <h5>Expert Writers</h5>
-                <p>Masters & PhD qualified professionals</p>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- SERVICES -->
-<div class="container mt-5">
-    <h3 class="text-center mb-4">Our Services</h3>
+<!-- PROJECT TYPES -->
+<div class="container">
+    <h3 class="section-title">Our Project Services</h3>
 
     <div class="row">
 
         <div class="col-md-4 mb-4">
-            <div class="card assignment-card p-4 text-center">
-                <h5>Essay Writing</h5>
-                <p>High quality academic essays</p>
+            <div class="card-box text-center">
+                <div class="icon"><i class="fa fa-code"></i></div>
+                <h5>Programming Projects</h5>
+                <p>Java, C++, Python projects with source code</p>
             </div>
         </div>
 
         <div class="col-md-4 mb-4">
-            <div class="card assignment-card p-4 text-center">
-                <h5>Case Studies</h5>
-                <p>Detailed analysis & solutions</p>
+            <div class="card-box text-center">
+                <div class="icon"><i class="fa fa-globe"></i></div>
+                <h5>Web Development</h5>
+                <p>HTML, CSS, React websites & systems</p>
             </div>
         </div>
 
         <div class="col-md-4 mb-4">
-            <div class="card assignment-card p-4 text-center">
-                <h5>Research Papers</h5>
-                <p>Professional academic research</p>
+            <div class="card-box text-center">
+                <div class="icon"><i class="fa fa-database"></i></div>
+                <h5>Database Projects</h5>
+                <p>SQL, MySQL & system development</p>
             </div>
         </div>
 
     </div>
 </div>
 
-<!-- COUNTRIES -->
-<div class="container mt-5 text-center">
-    <h3>We Help Students From</h3>
-    <p>Pakistan | UK | USA | Australia | UAE | Qatar | Saudi Arabia | Europe?</p>
+<!-- PRICING -->
+<div class="container">
+    <h3 class="section-title">Project Pricing</h3>
+
+    <div class="row">
+
+        <!-- BASIC -->
+        <div class="col-md-4 mb-4">
+            <div class="card-box text-center">
+                <h4>Basic Project</h4>
+                <p class="price">$30</p>
+                <ul>
+                    <li>Simple Code</li>
+                    <li>Basic Report</li>
+                    <li>1 Revision</li>
+                </ul>
+                <a href="https://wa.me/923014992473?text=Hi%20I%20need%20basic%20project" class="btn btn-whatsapp">
+                    Order Now
+                </a>
+            </div>
+        </div>
+
+        <!-- STANDARD -->
+        <div class="col-md-4 mb-4">
+            <div class="card-box text-center">
+                <h4>Standard Project</h4>
+                <p class="price">$80</p>
+                <ul>
+                    <li>Full Code</li>
+                    <li>Detailed Report</li>
+                    <li>Presentation Slides</li>
+                </ul>
+                <a href="https://wa.me/923014992473?text=Hi%20I%20need%20standard%20project" class="btn btn-whatsapp">
+                    Order Now
+                </a>
+            </div>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="col-md-4 mb-4">
+            <div class="card-box text-center">
+                <h4>Final Year Project</h4>
+                <p class="price">$200+</p>
+                <ul>
+                    <li>Complete System</li>
+                    <li>Full Documentation</li>
+                    <li>Live Demo</li>
+                </ul>
+                <a href="https://wa.me/923014992473?text=Hi%20I%20need%20final%20year%20project" class="btn btn-whatsapp">
+                    Order Now
+                </a>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 <!-- CTA -->
 <div class="container text-center mt-5 mb-5">
-    <h3>Need Help With Your Assignment?</h3>
-    <p>Get instant reply on WhatsApp</p>
+    <h3>Discuss Your Project First (Free)</h3>
+    <p>Get instant response on WhatsApp</p>
 
-    <a href="https://wa.me/923014992473?text=Hi%20I%20need%20assignment%20help" target="_blank" class="btn btn-order btn-lg">
-        <i class="fa fa-whatsapp"></i> Order Now on WhatsApp
+    <a href="https://wa.me/923014992473?text=Hi%20I%20need%20project%20help" class="btn btn-whatsapp btn-lg">
+        <i class="fa fa-whatsapp"></i> Chat Now
     </a>
 </div>
     <!-- cta area end -->
